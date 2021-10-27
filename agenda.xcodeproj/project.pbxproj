@@ -17,6 +17,9 @@
 		6C19CC312729EA9D0054580D /* agendaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C19CC302729EA9D0054580D /* agendaTests.swift */; };
 		6C19CC3B2729EA9D0054580D /* agendaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C19CC3A2729EA9D0054580D /* agendaUITests.swift */; };
 		6C19CC3D2729EA9D0054580D /* agendaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C19CC3C2729EA9D0054580D /* agendaUITestsLaunchTests.swift */; };
+		6C19CC4B2729EB520054580D /* agenda_data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6C19CC492729EB520054580D /* agenda_data.xcdatamodeld */; };
+		6C19CC4D2729EBC50054580D /* extension_data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C19CC4C2729EBC50054580D /* extension_data.swift */; };
+		6C19CC502729EC520054580D /* Funciones_Generales.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C19CC4F2729EC520054580D /* Funciones_Generales.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		6C19CC362729EA9D0054580D /* agendaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = agendaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C19CC3A2729EA9D0054580D /* agendaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = agendaUITests.swift; sourceTree = "<group>"; };
 		6C19CC3C2729EA9D0054580D /* agendaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = agendaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6C19CC4A2729EB520054580D /* agenda_data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = agenda_data.xcdatamodel; sourceTree = "<group>"; };
+		6C19CC4C2729EBC50054580D /* extension_data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension_data.swift; sourceTree = "<group>"; };
+		6C19CC4F2729EC520054580D /* Funciones_Generales.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Funciones_Generales.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		6C19CC152729EA980054580D /* agenda */ = {
 			isa = PBXGroup;
 			children = (
+				6C19CC4E2729EC130054580D /* Extensiones */,
 				6C19CC162729EA980054580D /* AppDelegate.swift */,
 				6C19CC182729EA980054580D /* SceneDelegate.swift */,
 				6C19CC1A2729EA980054580D /* ViewController.swift */,
@@ -109,6 +116,8 @@
 				6C19CC242729EA9D0054580D /* LaunchScreen.storyboard */,
 				6C19CC272729EA9D0054580D /* Info.plist */,
 				6C19CC1F2729EA980054580D /* agenda.xcdatamodeld */,
+				6C19CC492729EB520054580D /* agenda_data.xcdatamodeld */,
+				6C19CC4C2729EBC50054580D /* extension_data.swift */,
 			);
 			path = agenda;
 			sourceTree = "<group>";
@@ -128,6 +137,14 @@
 				6C19CC3C2729EA9D0054580D /* agendaUITestsLaunchTests.swift */,
 			);
 			path = agendaUITests;
+			sourceTree = "<group>";
+		};
+		6C19CC4E2729EC130054580D /* Extensiones */ = {
+			isa = PBXGroup;
+			children = (
+				6C19CC4F2729EC520054580D /* Funciones_Generales.swift */,
+			);
+			path = Extensiones;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C19CC502729EC520054580D /* Funciones_Generales.swift in Sources */,
+				6C19CC4B2729EB520054580D /* agenda_data.xcdatamodeld in Sources */,
 				6C19CC1B2729EA980054580D /* ViewController.swift in Sources */,
 				6C19CC172729EA980054580D /* AppDelegate.swift in Sources */,
 				6C19CC192729EA980054580D /* SceneDelegate.swift in Sources */,
 				6C19CC212729EA980054580D /* agenda.xcdatamodeld in Sources */,
+				6C19CC4D2729EBC50054580D /* extension_data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -426,7 +446,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -637,6 +657,16 @@
 			);
 			currentVersion = 6C19CC202729EA980054580D /* agenda.xcdatamodel */;
 			path = agenda.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		6C19CC492729EB520054580D /* agenda_data.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6C19CC4A2729EB520054580D /* agenda_data.xcdatamodel */,
+			);
+			currentVersion = 6C19CC4A2729EB520054580D /* agenda_data.xcdatamodel */;
+			path = agenda_data.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
